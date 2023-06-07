@@ -1,0 +1,70 @@
+.login-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#dfca6d 0%,#ba9013 100%);
+    position: relative;
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'creepster',cursive;
+    letter-spacing: 8px;
+    position: absolute;
+    top:20px;
+    right: 50px;
+
+}
+.desc{
+    font-size: 18px;
+    font-family: 'aldin',cursive;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 100px;
+    right:50px;
+    text-align: right;
+    width: 800px;
+}
+img{
+    height: 590px;
+    width: 450px;
+}
+.login-form{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    background-color: black;
+    opacity: .5;
+    color: white;
+    margin-left: 90px;
+    position: absolute;
+    box-shadow: 5px 5px 20px white;
+    top: 180px;
+    border-radius: 20px;
+
+}
+.form-group{
+    align-items:right;
+    justify-content: right;
+    text-align: right;
+}
+label{
+    margin-right:340px;
+    font-weight: bolder;
+}
+
+.btn{
+    background-color: rgb(13, 13, 223);
+    color:rgb(236, 230, 230);
+    opacity:1;
+ margin-top: 40px;
+
+}
+.error{
+    color: red;
+    top: 32px;
+}
+.a{
+    margin-top: 0px;
+    margin-right:300px ;
+    font-size:13px;
+}

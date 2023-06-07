@@ -1,0 +1,151 @@
+<app-header></app-header>
+<div class="home-conatiner">
+    <div class="all-book">
+        <div class="trending-book">
+            <div class="top">
+                <h4>Trending Books</h4>
+                <div  class="view-all">View All</div>
+            </div>
+            
+            <div class="book-thumbnail"  >
+               
+                <div class="book" *ngFor="let books of trendingBooks">
+                    <div class="cover ">
+                        <img [src]="books.cover" alt="hghgh">
+                    </div>
+                    <div class="detail ">
+                         <div class="name " (click)=" goToBook('Trending',books.id)">{{books.name}}</div>
+                    <div class="auther ">uuyuy</div>
+                    <div class="rating">{{books.rating}}</div>
+                </div>
+                
+            
+                </div>
+            
+           
+          
+            </div>
+
+            
+
+        
+           
+        </div>
+
+
+
+        <div class="popular-book">
+
+            <div class="top">
+                <h4>Popular Books</h4>
+                <div  class="view-all">View All</div>
+            </div>
+            
+            <div class="book-thumbnail"  >
+               
+                <div class="book" *ngFor="let books of popularBooks">
+                    <div class="cover ">
+                        <img [src]="books.cover" alt="hghgh">
+                    </div>
+                    <div class="detail ">
+                         <div class="name "  (click)=" goToBook('popular',books.id)">{{books.name}}</div>
+                    <div class="auther ">uuyuy</div>
+                    <div class="rating">{{books.rating}}</div>
+                </div>
+                
+            
+                </div>
+            
+           
+          
+            </div>
+        </div>
+    
+    
+    
+        <div class="upcoming-book">
+    
+            <div class="top">
+                <h4>Upcoming Books</h4>
+                <div  class="view-all">View All</div>
+            </div>
+            
+            <div class="book-thumbnail"  >
+               
+                <div class="book" *ngFor="let books of upcomingBooks">
+                    <div class="cover ">
+                        <img [src]="books.cover" alt="hghgh">
+                    </div>
+                    <div class="detail ">
+                         <div class="name "  (click)=" goToBook('Upcoming',books.id)">{{books.name}}</div>
+                    <div class="auther ">uuyuy</div>
+                    <div class="rating">{{books.rating}}</div>
+                </div>
+                
+            
+                </div>
+            
+           
+          
+            </div>
+        </div>
+    
+    
+    </div>
+    
+    <!-- <div class="popular-book">
+
+        <div class="top">
+            <h4>Popular Books</h4>
+            <div  class="view-all">View All</div>
+        </div>
+        
+        <div class="book-thumbnail"  >
+           
+            <div class="book" *ngFor="let books of popularBooks">
+                <div class="cover ">
+                    <img [src]="books.cover" alt="hghgh">
+                </div>
+                <div class="detail ">
+                     <div class="name ">{{books.name}}</div>
+                <div class="auther ">uuyuy</div>
+                <div class="rating">{{books.rating}}</div>
+            </div>
+            
+        
+            </div>
+        
+       
+      
+        </div>
+    </div>
+
+
+
+    <div class="upcoming-book">
+
+        <div class="top">
+            <h4>Upcoming Books</h4>
+            <div  class="view-all">View All</div>
+        </div>
+        
+        <div class="book-thumbnail"  >
+           
+            <div class="book" *ngFor="let books of upcomingBooks">
+                <div class="cover ">
+                    <img [src]="books.cover" alt="hghgh">
+                </div>
+                <div class="detail ">
+                     <div class="name ">{{books.name}}</div>
+                <div class="auther ">uuyuy</div>
+                <div class="rating">{{books.rating}}</div>
+            </div>
+            
+        
+            </div>
+        
+       
+      
+        </div>
+    </div> -->
+</div>

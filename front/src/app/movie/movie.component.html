@@ -1,0 +1,74 @@
+<app-header></app-header>
+<div class="book-container">
+    <div class="top">
+
+        <div class="left">
+<div class="name"><h1><b> {{movie.name}}</b></h1>
+<br></div>
+<div class="bodyy">
+    <div class="cover">
+        <img [src]="movie.cover">
+        
+    
+    </div>
+    <div class="frame d-flex">
+        <ul class="list-group">
+            <li class="list-group-item">Name of the book</li>
+            <li class="list-group-item">Name of the author</li>
+            <li class="list-group-item">Published on</li>
+            <li class="list-group-item">Number of pages</li>
+
+            <li class="list-group-item">Rating</li>
+            <li class="list-group-item">Add review </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item">{{movie.name}}</li>
+            <li class="list-group-item">{{movie.author}}</li>
+            <li class="list-group-item">{{movie.published_on}}</li>
+
+   
+      <li class="list-group-item">{{movie.Number_of_pages}}</li>
+            <li class="list-group-item">{{movie.rating}}</li>
+            <li class="list-group-item"><button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add</button></li>
+          </ul>
+          
+
+    </div>
+</div>
+
+
+        </div>
+
+        <div class="right"></div>
+
+
+    </div>
+
+
+
+    <div class="bottom"></div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+       <textarea></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

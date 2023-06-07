@@ -1,0 +1,30 @@
+<div class="register-container">
+
+  <div class="logo">
+    <img src="assets\book-review-icon-1024x894.png" height="150px" width="200px">
+  </div>
+
+  <div class="register-form">
+    <form>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text"  class="form-control"  [(ngModel)]="email" name="username"placeholder="Enter Your Email" required>
+  </div><br>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text"  class="form-control"  [(ngModel)]="username" name="username"placeholder="Enter Your Usernmae" required>
+    </div><br>
+    <div class="form-group">
+        <label for="password">Password</label><br>
+        <input type="password"  class="form-control" [(ngModel)]="password" name="password" placeholder="Enter Your password" required>
+    </div>
+    <div class="error">{{Errormsg}}</div>
+
+    
+    <button (click)="register()" class="btn"type="submit">REGISTER</button>
+   
+    <a href="">Login</a>
+  </form>
+</div>
+
+</div>

@@ -1,0 +1,34 @@
+.register-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#dfca6d 0%,#ba9013 100%);
+    position: relative;
+}
+img{
+   
+   margin-top: 60px;
+   margin-left: 500px;
+}
+
+.register-form{
+    height: 400px;
+    width:600px;
+    margin-left: 300px;
+     margin-top: 45px;
+}
+.btn{
+    background: rgb(59, 59, 186);
+    color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 9px;
+}
+.error{
+    color: red;
+    
+}

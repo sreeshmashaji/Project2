@@ -1,0 +1,27 @@
+<div class="login-container">
+    <div class="logo">Rotten Pottatoes</div>
+    <img src="assets\pngegg (2).png" alt="image">
+    <!-- <img src="assets\pngegg (1).png" alt="image"> -->
+
+    <div class="desc"> Rotten pottatoes are the world's most trusted recommendation resources for quality 
+        entertainment.
+    As the online aggregator of movie and tv reviews from critics,we provide fans with  a comprehensive 
+guide to which what's Fresh nad what's Rotten-in theators and home.If you are an entertainment fan looking for
+recommendation,lor to share an opinion you have come to the right place
+<div class="login-form">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text"  class="form-control" [(ngModel)]="email"  name="email"placeholder="Enter Your Email" required>
+    </div><br>
+    <div class="form-group">
+        <label for="password">Password</label><br>
+        <input type="password"  class="form-control" [(ngModel)]="password"  name="password" placeholder="Enter Your password" required>
+    </div>
+    <div class="error">{{errorMsg}}</div>
+    <button  class="btn"type="submit" (click)="login()">LOGIN</button>
+   <div class="a">
+    <a href="register">Create new account</a></div>
+</div>
+</div>
+
+</div>
